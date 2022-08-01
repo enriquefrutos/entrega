@@ -12,5 +12,7 @@ function verpelis(){
       });
       ;
     };
-pedirDatos();}
+if (todPelis.hasChildNodes()){ }
+else {   
+pedirDatos();}}
     
