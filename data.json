@@ -1,7 +1,8 @@
 [
-    { "nombre": "JUAN", "apellido": "RODRGIUEZ", "id": 1 },
-    { "nombre": "PABLO", "apellido": "GONZALEZ", "id": 2 },
-    { "nombre": "LUCAS", "apellido": "ROSATTO", "id": 3 },
-    { "nombre": "MARIANO", "apellido": "MARTINEZ", "id": 4 },
-    { "nombre": "GONZALO", "apellido": "IRIONDO", "id": 5 }
+    { "titulo": "MISION IMPOSIBLE", "año": "1992", "id": 1 },
+    { "titulo": "SCARFACE", "año": "1978", "id": 2 },
+    { "titulo": "JURASSIC PARK", "año": "1992", "id": 3 },
+    { "titulo": "HARRY POTTER", "año": "2001", "id": 4 },
+    { "titulo": "INDIANA JONES", "año": "1984", "id": 5 },
+    { "titulo": "EL RESPLANDOR", "año": "1974", "id": 5 }
   ]
