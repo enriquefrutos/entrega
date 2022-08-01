@@ -1,0 +1,44 @@
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: beige;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+h3{
+    background-color: lightgrey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0.3;
+    margin: 0;
+}
+
+.formulario{
+    margin: 0;
+    padding: 2%;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+ul{
+    list-style-type: none;
+    background-color: antiquewhite;
+    margin: 0;
+    font-family: serif;
+}
+
+footer {
+    background-color: lightpink;
+  }
+  footer div a {
+    text-decoration: none;
+  }
+  footer div img {
+    width: 30px;
+    opacity: 0.5;
+  }
+  footer h3 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    padding: 0;
+  }

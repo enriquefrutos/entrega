@@ -4,15 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    <h1>CINE</h1>
+    
+    <!--navbar-->
+    <nav class="navbar navbar-dark bg-dark sticky-top" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MENU</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+            <a class="nav-link" href="registrate.html">REGISTRATE</a>
+            <a class="nav-link" href="index.html#entradas">ENTRADAS</a>
+            <a class="nav-link" href="index.html#proximos">PROXIMOS ESTRENOS</a>
+            <a class="nav-link" href="index.html#login">LOGIN</a>
+            <a class="nav-link" href="#contacto">CONTACTO</a>
+          </div>
+        </div>
+      </div>
+    </nav>
     <h2>REGISTRARSE</h2>
-    <form id="formulario">
-        <input type="text" placeholder="Nombre" required >
+    <form id="formulario" class="formulario">
+        <input type="text" placeholder="Nombre" required>
         <input type="text" placeholder="Apellido" required >
         <input type="number" placeholder="Edad" />
-        <input type="submit" value="Enviar" />
+        <input type="submit" value="Enviar"  />
       </form>
 
       <h3>Todos los usuarios</h3>
@@ -22,8 +45,47 @@
       <h3>Ultimo usuario registrado</h3>
       <ul id="pad"></ul>
       <ul id="list"></ul>
-    <script src="./app.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    
+    <footer id="contacto">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                CONTACTO
+              </button>
+            </h3>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div><img src="imagenes/logofacebook.webp" alt="facebook"><a href="https://es-la.facebook.com/">facebook</a></div>
+                <div><img src="imagenes/logoinstagram.jpg" alt="instagram"><a href="https://www.instagram.com/">instagram</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                UBICACION
+              </button>
+            </h3>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.78982384896!2d-58.4102014!3d-34.5865211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x22f851827c26991e!2sCinemark%20Palermo!5e0!3m2!1ses-419!2sar!4v1646755686880!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        
+    
+    </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+      <script src="./app.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  
     
 </body>
 </html>
