@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="description" content="Somos la mejor plataforma para comprar tus entradas de cine">
+    <meta name="keywords" content="cine,entradas,estrenos,peliculas,film,">
+    <link rel="stylesheet" href="./style.css">
+    <title>CINE</title>
+</head>
+<body>
+    <h1>CINE</h1>
+    <!--nav bar-->
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MENU</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+              <a class="nav-link" href="registrate.html">REGISTRATE</a>
+              <a class="nav-link" href="#entradas">ENTRADAS</a>
+              <a class="nav-link" href="#proximos">PROXIMOS ESTRENOS</a>
+              <a class="nav-link" href="#login">LOGIN</a>
+              <a class="nav-link" href="#contacto">CONTACTO</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <h3 id="usu">Bienvenido</h3>
+      <ul id="pad"></ul>
+      <ul id="list"></ul>
+      <H2>CARTELERA</H2>
+
+      <!--carrousel-->
+<section class="d-flex justify-content-center">
+    
+    <div id="carouselExampleCaptions" class="carousel slide w-25" data-bs-ride="carousel"  >   
+        <div class="carousel-indicators" >
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" 
+          aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#entradas"><img src="imagenes/indiana jones.jpg" class="d-block w-100" alt="indiana"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Indiana jones</h5>
+        
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="#entradas"><img src="imagenes/scarface.jpg" class="d-block w-100" alt="scarface"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Scarface</h5>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="#entradas"><img src="imagenes/jurrasic_park_poster_2.webp" class="d-block w-100" alt="Jurrasic"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Jurrasic park</h5>
+     
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <h2 id="entradas">ENTRADAS</h2>
+<section>
+    <div xlass="entradas">
+    <p>INDANA JONES</p>
+    <!--opciones sacar entradas-->
+    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="btnradio1">15:40</label>
+      
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio2">17:00</label>
+      
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio3">23:30</label>
+      </div>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Sacar entrada
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Entrada</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          1500$
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary"><a href="https://www.ticketek.com.ar/">Comprar</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p>SCARFACE</p>
+  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" checked>
+    <label class="btn btn-outline-primary" for="btnradio4">14:00</label>
+  
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+    <label class="btn btn-outline-primary" for="btnradio5">19:25</label>
+  
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
+    <label class="btn btn-outline-primary" for="btnradio6">21:30</label>
+  </div>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Sacar entrada
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Entrada</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        1500$
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary"><a href="https://www.ticketek.com.ar/">Comprar</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+<p>JURASSIC PARK</p>
+<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off" checked>
+    <label class="btn btn-outline-primary" for="btnradio7">12:00</label>
+  
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off">
+    <label class="btn btn-outline-primary" for="btnradio8">16:00</label>
+  
+    <input type="radio" class="btn-check" name="btnradio" id="btnradio9" autocomplete="off">
+    <label class="btn btn-outline-primary" for="btnradio9">00:30</label>
+  </div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+Sacar entrada
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Entrada 22:00</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      1500$
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      <button type="button" class="btn btn-primary"><a href="https://www.ticketek.com.ar/">Comprar</a></button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+</section>
+<!--proximos estrenos-->
+    <h2 id="proximos">PROXIMOS ESTRENOS</h2>
+
+    <section>
+      <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 300px;">
+                  <img src="imagenes/terminator.jpg" class="card-img-top" alt="terminator">
+                  <div class="card-body">
+                    <h5 class="card-title">Terminator</h5>
+                    <p class="card-text">Estreno 12 de diciembre</p>
+                    <a href="https://www.ticketek.com.ar/" class="btn btn-primary">RESERVA ENTRADA</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 300px;">
+                  <img src="imagenes/harryportter.jpg" class="card-img-top" alt="harrypotter">
+                  <div class="card-body">
+                    <h5 class="card-title">HARRY POTTER</h5>
+                    <p class="card-text">Estreno 8 de noviembre</p>
+                    <a href="https://www.ticketek.com.ar/" class="btn btn-primary">RESERVA ENTRADA</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 300PX;">
+                  <img src="imagenes/edge of tomorrow.jpg" class="card-img-top" alt="edge">
+                  <div class="card-body">
+                    <h5 class="card-title">EDGE OF TOMORROW</h5>
+                    <p class="card-text">Estreno 11 de noviembre</p>
+                    <a href="https://www.ticketek.com.ar/" class="btn btn-primary">RESERVA ENTRADA</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+
+
+
+<!--footer-->
+    
+    <footer id="contacto">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              CONTACTO
+            </button>
+          </h3>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div><img src="imagenes/logofacebook.webp" alt="facebook"><a href="https://es-la.facebook.com/">facebook</a></div>
+              <div><img src="imagenes/logoinstagram.jpg" alt="instagram"><a href="https://www.instagram.com/">instagram</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              UBICACION
+            </button>
+          </h3>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.78982384896!2d-58.4102014!3d-34.5865211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x22f851827c26991e!2sCinemark%20Palermo!5e0!3m2!1ses-419!2sar!4v1646755686880!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+  
+  </footer>
+      
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

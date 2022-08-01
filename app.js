@@ -51,6 +51,7 @@ function validarformulario (e){
         //spread
     let clientes1 = [...clientes]
     alert(`spread, copia ${clientes1}`);
+    
 
 const pedirDatos = async () => {
   const respuesta = await fetch('./data.json');
@@ -64,11 +65,20 @@ const pedirDatos = async () => {
 };
 pedirDatos();
 let almacenado = localStorage.getItem('clientes')
-if (almacenado){
+if (clientes){
   lista = JSON.parse(almacenado);
 }
 
-}
+
+function redi() {if (clientes) {
+   window.location.href = './inicio.html'
+  }}
+   setTimeout(redi,5000);
+
+  };
+
+
+
 
 
 

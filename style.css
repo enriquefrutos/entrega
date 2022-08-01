@@ -1,11 +1,11 @@
-h2{
+#registro{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: beige;
     text-align: center;
     padding: 0;
     margin: 0;
 }
-h3{
+#usu{
     background-color: lightgrey;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 0.3;
@@ -15,10 +15,10 @@ h3{
 .formulario{
     margin: 0;
     padding: 2%;
+    display: flex;
     background-color: antiquewhite;
     align-items: center;
     justify-content: center;
-    text-align: center;
 
 }
 ul{
