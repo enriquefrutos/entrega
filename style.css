@@ -50,3 +50,12 @@ footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-left: 0.3%;
   }
+
+  .contenedor {
+    list-style-type: none;
+    background-color: antiquewhite;
+    margin: 0;
+    font-family: serif;
+    display: flex;
+    justify-content: space-between;
+  }
