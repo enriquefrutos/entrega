@@ -60,3 +60,8 @@ footer {
     display: flex;
     justify-content: space-between;
   }
+  
+  #borrar {
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }

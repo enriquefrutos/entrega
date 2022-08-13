@@ -41,4 +41,10 @@ if (nuevototal) {
   localStorage.setItem("total", nuevototal)
 }
 }
-
+let borrar = document.getElementById('borrar')
+borrar.addEventListener('click', limpiar);
+function limpiar  (nuevototal){
+  if (nuevototal){
+  localStorage.removeItem("total")}
+}
+  
