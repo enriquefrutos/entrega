@@ -2,7 +2,7 @@ let infototal = localStorage.getItem('total');
 let ainfo = JSON.parse(infototal);
 function totalinfo(){
   if (ainfo) {let li = document.createElement("li");
-  li.innerHTML = `Ya en el carrito $${ainfo}`;
+  li.innerHTML = `Ya en el carrito: $${ainfo}`;
   total.append(li);
   }
 }
@@ -34,7 +34,7 @@ comprar.addEventListener('click', comprarentrada);
 function comprarentrada (){
   suma += 1500
   nuevototal = ainfo + suma
-totalcompra.innerHTML = `Total compra $${nuevototal}`;
+totalcompra.innerHTML = `Total compra: $${nuevototal}`;
 total.append(totalcompra);
 localStorage.setItem("total", suma)
 }
