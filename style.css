@@ -55,6 +55,7 @@ footer {
     list-style-type: none;
     background-color: antiquewhite;
     margin: 0;
+    padding-right: 5%;
     font-family: serif;
     display: flex;
     justify-content: space-between;
