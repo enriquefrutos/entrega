@@ -37,5 +37,8 @@ function comprarentrada (){
 totalcompra.innerHTML = `Total compra: $${nuevototal}`;
 total.append(totalcompra);
 localStorage.setItem("total", suma)
+if (nuevototal) {
+  localStorage.setItem("total", nuevototal)
+}
 }
 
