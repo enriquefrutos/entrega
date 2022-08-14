@@ -46,5 +46,11 @@ borrar.addEventListener('click', limpiar);
 function limpiar  (nuevototal){
   if (nuevototal){
   localStorage.removeItem("total")}
-}
+  function redirigir() {if (nuevototal) {
+    window.location.href = './inicio.html'
+   }}
+    setTimeout(redirigir,000);
+   }
+
+
   
